@@ -1,12 +1,9 @@
 # Ta21vGIT
 
-<h1>
+<p align="center">
 Serveripoolsed tehnoloogiad
-</h1>
-
-<h2>
 Nikita Izoivt
-</h2>
+<p>
 
 ## 🌱 I'm currently learning
 
