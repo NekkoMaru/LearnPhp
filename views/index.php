@@ -1,5 +1,5 @@
 <?php
-    $name = 'Kaspar';
+    $name = 'Nikita';
 ?>
 
 <?php include __DIR__ . '/partials/header.php' ?> 
