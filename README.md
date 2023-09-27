@@ -11,3 +11,5 @@ Nikita Izoivt
 ## 🌱 I'm currently learning
 
 - Git
+- Php
+- WebDev
