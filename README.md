@@ -1,7 +1,7 @@
 # Ta21vGIT
 
 <p align="center">
-Serveripoolsed tehnoloogiad
+Serveripoolsed tehnoloogiad </br>
 Nikita Izoivt
 <p>
 
