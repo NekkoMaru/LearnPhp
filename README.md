@@ -2,8 +2,11 @@
 
 <h1>
 Serveripoolsed tehnoloogiad
-Nikita Izoivt
 </h1>
+
+<h2>
+Nikita Izoivt
+</h2>
 
 ## 🌱 I'm currently learning
 
