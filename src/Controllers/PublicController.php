@@ -13,7 +13,7 @@ class PublicController {
         $users = User::all();
         //var_dump($users);
 
-        $name = 'Artjom';
+        $name = 'Nikita';
         view('index', compact('posts'));
     }
 

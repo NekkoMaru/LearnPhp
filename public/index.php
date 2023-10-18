@@ -1,18 +1,18 @@
-<?php 
+<?php
 
-spl_autoload_register(function($class) {
+// var_dump($_SERVER);
+
+use App\Exceptions\NotFoundException;
+
+spl_autoload_register(function ($class) {
     $class = substr($class, 4);
     require_once __DIR__ . "/../src/$class.php";
 });
 
-use App\Exceptions\NotFoundException;
-use App\Router;
-
 include __DIR__ . '/../routes.php';
 include __DIR__ . '/../helpers.php';
-
 try {
-    $router = new Router($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
+    $router = new App\Router($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
     $match = $router->match();
     if ($match) {
         if (is_callable($match['action'])) {
@@ -23,7 +23,7 @@ try {
             $method = $match['action'][1];
             $controller->$method();
         } else {
-            throw new NotFoundException();
+            // throw error;
         }
     } else {
         throw new NotFoundException();
@@ -32,5 +32,13 @@ try {
     http_response_code(404);
     view('404');
 }
-
-
+// switch($_SERVER['REQUEST_URI']){
+//     case '/':
+//         include 'views/index.php';
+//         break;
+//     case '/about':
+//         include 'views/about.php';
+//         break;
+//     default: 
+//         echo '404';
+// }
